@@ -1,0 +1,10 @@
+c:\users\edwin.ikechukwu\documents\visual studio 2012\Projects\SmartLabelWindows\SmartLabelWindowws\bin\Debug\SmartLabelWindowws.exe.config
+c:\users\edwin.ikechukwu\documents\visual studio 2012\Projects\SmartLabelWindows\SmartLabelWindowws\bin\Debug\SmartLabelWindowws.exe
+c:\users\edwin.ikechukwu\documents\visual studio 2012\Projects\SmartLabelWindows\SmartLabelWindowws\bin\Debug\SmartLabelWindowws.pdb
+c:\users\edwin.ikechukwu\documents\visual studio 2012\Projects\SmartLabelWindows\SmartLabelWindowws\obj\Debug\SmartLabelWindowws.Properties.Resources.resources
+c:\users\edwin.ikechukwu\documents\visual studio 2012\Projects\SmartLabelWindows\SmartLabelWindowws\obj\Debug\SmartLabelWindowws.csproj.GenerateResource.Cache
+c:\users\edwin.ikechukwu\documents\visual studio 2012\Projects\SmartLabelWindows\SmartLabelWindowws\obj\Debug\SmartLabelWindowws.exe
+c:\users\edwin.ikechukwu\documents\visual studio 2012\Projects\SmartLabelWindows\SmartLabelWindowws\obj\Debug\SmartLabelWindowws.pdb
+c:\users\edwin.ikechukwu\documents\visual studio 2012\Projects\SmartLabelWindows\SmartLabelWindowws\obj\Debug\SmartLabelWindowws.Form1.resources
+c:\users\edwin.ikechukwu\documents\visual studio 2012\Projects\SmartLabelWindows\SmartLabelWindowws\bin\Debug\Zen.Barcode.Core.dll
+c:\users\edwin.ikechukwu\documents\visual studio 2012\Projects\SmartLabelWindows\SmartLabelWindowws\obj\Debug\SmartLabelWindowws.csprojResolveAssemblyReference.cache
