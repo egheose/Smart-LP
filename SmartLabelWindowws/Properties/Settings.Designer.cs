@@ -33,5 +33,41 @@ namespace SmartLabelWindowws.Properties {
                 return ((string)(this["Konga2014ConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string printer {
+            get {
+                return ((string)(this["printer"]));
+            }
+            set {
+                this["printer"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int size {
+            get {
+                return ((int)(this["size"]));
+            }
+            set {
+                this["size"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool isAlwaysPrintFirstGRN {
+            get {
+                return ((bool)(this["isAlwaysPrintFirstGRN"]));
+            }
+            set {
+                this["isAlwaysPrintFirstGRN"] = value;
+            }
+        }
     }
 }

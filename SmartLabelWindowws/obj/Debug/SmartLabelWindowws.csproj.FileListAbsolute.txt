@@ -8,3 +8,10 @@ c:\users\edwin.ikechukwu\documents\visual studio 2012\Projects\SmartLabelWindows
 c:\users\edwin.ikechukwu\documents\visual studio 2012\Projects\SmartLabelWindows\SmartLabelWindowws\obj\Debug\SmartLabelWindowws.Form1.resources
 c:\users\edwin.ikechukwu\documents\visual studio 2012\Projects\SmartLabelWindows\SmartLabelWindowws\bin\Debug\Zen.Barcode.Core.dll
 c:\users\edwin.ikechukwu\documents\visual studio 2012\Projects\SmartLabelWindows\SmartLabelWindowws\obj\Debug\SmartLabelWindowws.csprojResolveAssemblyReference.cache
+C:\Users\edwin.ikechukwu\Documents\Visual Studio 2012\Projects\SmartLabelWindows\SmartLabelWindowws\obj\Debug\SmartLabelWindowws.Printersetting.resources
+C:\Users\edwin.ikechukwu\Documents\Visual Studio 2012\Projects\SmartLabelWindows\SmartLabelWindowws\bin\Debug\SmartLabelWindowws.exe.manifest
+C:\Users\edwin.ikechukwu\Documents\Visual Studio 2012\Projects\SmartLabelWindows\SmartLabelWindowws\bin\Debug\SmartLabelWindowws.application
+C:\Users\edwin.ikechukwu\Documents\Visual Studio 2012\Projects\SmartLabelWindows\SmartLabelWindowws\obj\Debug\SmartLabelWindowws.TrustInfo.xml
+C:\Users\edwin.ikechukwu\Documents\Visual Studio 2012\Projects\SmartLabelWindows\SmartLabelWindowws\obj\Debug\SmartLabelWindowws.exe.manifest
+C:\Users\edwin.ikechukwu\Documents\Visual Studio 2012\Projects\SmartLabelWindows\SmartLabelWindowws\obj\Debug\SmartLabelWindowws.application
+C:\Users\edwin.ikechukwu\Documents\Visual Studio 2012\Projects\SmartLabelWindows\SmartLabelWindowws\obj\Debug\SmartLabelWindowws.exe.licenses

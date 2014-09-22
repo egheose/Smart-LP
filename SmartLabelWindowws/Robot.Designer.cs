@@ -318,6 +318,8 @@ namespace SmartLabelWindowws {
             
             private global::System.Data.DataColumn columnGRN_No;
             
+            private global::System.Data.DataColumn columnDocDate;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public Sp_GRN_GrnByPoNumDataTable() {
@@ -369,6 +371,14 @@ namespace SmartLabelWindowws {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn DocDateColumn {
+                get {
+                    return this.columnDocDate;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -404,11 +414,12 @@ namespace SmartLabelWindowws {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public Sp_GRN_GrnByPoNumRow AddSp_GRN_GrnByPoNumRow(int PO_Num, string GRN_No) {
+            public Sp_GRN_GrnByPoNumRow AddSp_GRN_GrnByPoNumRow(int PO_Num, string GRN_No, System.DateTime DocDate) {
                 Sp_GRN_GrnByPoNumRow rowSp_GRN_GrnByPoNumRow = ((Sp_GRN_GrnByPoNumRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         PO_Num,
-                        GRN_No};
+                        GRN_No,
+                        DocDate};
                 rowSp_GRN_GrnByPoNumRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowSp_GRN_GrnByPoNumRow);
                 return rowSp_GRN_GrnByPoNumRow;
@@ -433,6 +444,7 @@ namespace SmartLabelWindowws {
             internal void InitVars() {
                 this.columnPO_Num = base.Columns["PO_Num"];
                 this.columnGRN_No = base.Columns["GRN_No"];
+                this.columnDocDate = base.Columns["DocDate"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -442,6 +454,8 @@ namespace SmartLabelWindowws {
                 base.Columns.Add(this.columnPO_Num);
                 this.columnGRN_No = new global::System.Data.DataColumn("GRN_No", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnGRN_No);
+                this.columnDocDate = new global::System.Data.DataColumn("DocDate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDocDate);
                 this.columnPO_Num.AllowDBNull = false;
                 this.columnGRN_No.ReadOnly = true;
                 this.columnGRN_No.MaxLength = 50;
@@ -950,6 +964,22 @@ namespace SmartLabelWindowws {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public System.DateTime DocDate {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tableSp_GRN_GrnByPoNum.DocDateColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'DocDate\' in table \'Sp_GRN_GrnByPoNum\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSp_GRN_GrnByPoNum.DocDateColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsGRN_NoNull() {
                 return this.IsNull(this.tableSp_GRN_GrnByPoNum.GRN_NoColumn);
             }
@@ -958,6 +988,18 @@ namespace SmartLabelWindowws {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetGRN_NoNull() {
                 this[this.tableSp_GRN_GrnByPoNum.GRN_NoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsDocDateNull() {
+                return this.IsNull(this.tableSp_GRN_GrnByPoNum.DocDateColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetDocDateNull() {
+                this[this.tableSp_GRN_GrnByPoNum.DocDateColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -1352,6 +1394,7 @@ namespace SmartLabelWindowws.RobotTableAdapters {
             tableMapping.DataSetTable = "Sp_GRN_GrnByPoNum";
             tableMapping.ColumnMappings.Add("PO_Num", "PO_Num");
             tableMapping.ColumnMappings.Add("GRN_No", "GRN_No");
+            tableMapping.ColumnMappings.Add("DocDate", "DocDate");
             this._adapter.TableMappings.Add(tableMapping);
         }
         

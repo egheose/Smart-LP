@@ -9,7 +9,7 @@
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Sp_GRN_GrnByPoNumTableAdapter" GeneratorDataComponentClassName="Sp_GRN_GrnByPoNumTableAdapter" Name="Sp_GRN_GrnByPoNum" UserDataComponentName="Sp_GRN_GrnByPoNumTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="Konga2014ConnectionString (Settings)" DbObjectName="Konga2014.dbo.Sp_GRN_GrnByPoNum" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="Konga2014ConnectionString (Settings)" DbObjectName="Konga2014.dbo.Sp_GRN_GrnByPoNum" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                     <CommandText>dbo.Sp_GRN_GrnByPoNum</CommandText>
@@ -24,6 +24,7 @@
             <Mappings>
               <Mapping SourceColumn="PO_Num" DataSetColumn="PO_Num" />
               <Mapping SourceColumn="GRN_No" DataSetColumn="GRN_No" />
+              <Mapping SourceColumn="DocDate" DataSetColumn="DocDate" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -60,7 +61,7 @@
   <xs:element name="Robot" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Robot" msprop:Generator_UserDSName="Robot">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Sp_GRN_GrnByPoNum" msprop:Generator_TableClassName="Sp_GRN_GrnByPoNumDataTable" msprop:Generator_TableVarName="tableSp_GRN_GrnByPoNum" msprop:Generator_TablePropName="Sp_GRN_GrnByPoNum" msprop:Generator_RowDeletingName="Sp_GRN_GrnByPoNumRowDeleting" msprop:Generator_RowChangingName="Sp_GRN_GrnByPoNumRowChanging" msprop:Generator_RowEvHandlerName="Sp_GRN_GrnByPoNumRowChangeEventHandler" msprop:Generator_RowDeletedName="Sp_GRN_GrnByPoNumRowDeleted" msprop:Generator_UserTableName="Sp_GRN_GrnByPoNum" msprop:Generator_RowChangedName="Sp_GRN_GrnByPoNumRowChanged" msprop:Generator_RowEvArgName="Sp_GRN_GrnByPoNumRowChangeEvent" msprop:Generator_RowClassName="Sp_GRN_GrnByPoNumRow">
+        <xs:element name="Sp_GRN_GrnByPoNum" msprop:Generator_TableClassName="Sp_GRN_GrnByPoNumDataTable" msprop:Generator_TableVarName="tableSp_GRN_GrnByPoNum" msprop:Generator_RowChangedName="Sp_GRN_GrnByPoNumRowChanged" msprop:Generator_TablePropName="Sp_GRN_GrnByPoNum" msprop:Generator_RowDeletingName="Sp_GRN_GrnByPoNumRowDeleting" msprop:Generator_RowChangingName="Sp_GRN_GrnByPoNumRowChanging" msprop:Generator_RowEvHandlerName="Sp_GRN_GrnByPoNumRowChangeEventHandler" msprop:Generator_RowDeletedName="Sp_GRN_GrnByPoNumRowDeleted" msprop:Generator_RowClassName="Sp_GRN_GrnByPoNumRow" msprop:Generator_UserTableName="Sp_GRN_GrnByPoNum" msprop:Generator_RowEvArgName="Sp_GRN_GrnByPoNumRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="PO_Num" msprop:Generator_ColumnVarNameInTable="columnPO_Num" msprop:Generator_ColumnPropNameInRow="PO_Num" msprop:Generator_ColumnPropNameInTable="PO_NumColumn" msprop:Generator_UserColumnName="PO_Num" type="xs:int" />
@@ -71,10 +72,11 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
+              <xs:element name="DocDate" msprop:Generator_ColumnVarNameInTable="columnDocDate" msprop:Generator_ColumnPropNameInRow="DocDate" msprop:Generator_ColumnPropNameInTable="DocDateColumn" msprop:Generator_UserColumnName="DocDate" type="xs:dateTime" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Sp_GRN_GrnByPoNum_items" msprop:Generator_TableClassName="Sp_GRN_GrnByPoNum_itemsDataTable" msprop:Generator_TableVarName="tableSp_GRN_GrnByPoNum_items" msprop:Generator_TablePropName="Sp_GRN_GrnByPoNum_items" msprop:Generator_RowDeletingName="Sp_GRN_GrnByPoNum_itemsRowDeleting" msprop:Generator_RowChangingName="Sp_GRN_GrnByPoNum_itemsRowChanging" msprop:Generator_RowEvHandlerName="Sp_GRN_GrnByPoNum_itemsRowChangeEventHandler" msprop:Generator_RowDeletedName="Sp_GRN_GrnByPoNum_itemsRowDeleted" msprop:Generator_UserTableName="Sp_GRN_GrnByPoNum_items" msprop:Generator_RowChangedName="Sp_GRN_GrnByPoNum_itemsRowChanged" msprop:Generator_RowEvArgName="Sp_GRN_GrnByPoNum_itemsRowChangeEvent" msprop:Generator_RowClassName="Sp_GRN_GrnByPoNum_itemsRow">
+        <xs:element name="Sp_GRN_GrnByPoNum_items" msprop:Generator_TableClassName="Sp_GRN_GrnByPoNum_itemsDataTable" msprop:Generator_TableVarName="tableSp_GRN_GrnByPoNum_items" msprop:Generator_RowChangedName="Sp_GRN_GrnByPoNum_itemsRowChanged" msprop:Generator_TablePropName="Sp_GRN_GrnByPoNum_items" msprop:Generator_RowDeletingName="Sp_GRN_GrnByPoNum_itemsRowDeleting" msprop:Generator_RowChangingName="Sp_GRN_GrnByPoNum_itemsRowChanging" msprop:Generator_RowEvHandlerName="Sp_GRN_GrnByPoNum_itemsRowChangeEventHandler" msprop:Generator_RowDeletedName="Sp_GRN_GrnByPoNum_itemsRowDeleted" msprop:Generator_RowClassName="Sp_GRN_GrnByPoNum_itemsRow" msprop:Generator_UserTableName="Sp_GRN_GrnByPoNum_items" msprop:Generator_RowEvArgName="Sp_GRN_GrnByPoNum_itemsRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="PO_Num" msprop:Generator_ColumnVarNameInTable="columnPO_Num" msprop:Generator_ColumnPropNameInRow="PO_Num" msprop:Generator_ColumnPropNameInTable="PO_NumColumn" msprop:Generator_UserColumnName="PO_Num" type="xs:int" />
